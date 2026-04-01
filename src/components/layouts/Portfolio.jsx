@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import Container from '../Container';
+import Images from '../Images';
 
 const projects = [
     { id: 1, title: "Modern E-commerce", category: "E-commerce", image: "/src/assets/pSix.png" },
@@ -39,10 +40,7 @@ const Portfolio = () => {
                             key={project.id}
                             className="group relative overflow-hidden rounded-2xl bg-gray-800 aspect-4/3 cursor-pointer"
                         >
-                            <img
-                                src={project.image}
-                                alt={project.title}
-                                className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110 opacity-80 group-hover:opacity-100"
+                            <Images imgSrc={project.image} className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110 opacity-80 group-hover:opacity-100"
                             />
                             <div className="absolute inset-0 bg-linear-to-t from-black/80 via-black/20 to-transparent flex flex-col justify-end p-8 translate-y-4 group-hover:translate-y-0 transition-transform duration-300">
                                 <span className="text-white/60 text-xs uppercase tracking-widest mb-2">

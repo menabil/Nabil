@@ -1,5 +1,6 @@
 import Container from '../Container';
 import { FaArrowRightLong } from "react-icons/fa6";
+import Images from '../Images';
 
 const blogPosts = [
     {
@@ -51,11 +52,8 @@ const Blog = () => {
                             className="group bg-white rounded-3xl overflow-hidden shadow-sm hover:shadow-newMade transition-all duration-300 border border-gray-100"
                         >
                             <div className="aspect-16/10 overflow-hidden">
-                                <img
-                                    src={post.image}
-                                    alt={post.title}
-                                    className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
-                                />
+                                <Images imgSrc={post.image}
+                                    className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" />
                             </div>
                             <div className="p-7">
                                 <div className="flex items-center gap-3 mb-4">
