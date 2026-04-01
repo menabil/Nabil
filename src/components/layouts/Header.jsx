@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import Container from "../Container"
+import Smooth from '../SmoothLink';
+import SmoothLink from '../SmoothLink';
 
 const Header = () => {
     const [isOpen, setIsOpen] = useState(false);
@@ -43,22 +45,23 @@ const Header = () => {
                             <ul className="hidden md:flex items-end gap-9 list-none mb-0">
                                 {['Home', 'About', 'Portfolio', 'Blog'].map((item) => (
                                     <li key={item}>
-                                        <a
-                                            href={`#${item.toLowerCase()}`}
+                                        <SmoothLink href={`#${item.toLowerCase()}`}><a
+
                                             className="nav-link relative no-underline text-gray-800 text-sm font-medium transition-colors hover:text-primary"
                                         >
                                             {item}
-                                        </a>
+                                        </a></SmoothLink>
                                     </li>
                                 ))}
                             </ul>
                             {/* Hire Me Button */}
-                            <a
-                                href="#contact"
+                            <SmoothLink href="#contact">  <a
                                 className="hidden md:inline-flex items-center gap-2 px-[22px] py-2.5 rounded-full bg-primary text-white font-semibold text-[13px] transition-all duration-300 border-3 border-primary hover:border-indigo-200 hover:bg-transparent hover:text-primary no-underline"
                             >
                                 Hire Me
-                            </a></div>
+                            </a>
+                            </SmoothLink>
+                        </div>
                         {/* Hamburger Icon */}
                         <div
                             className="md:hidden flex flex-col gap-[5px] cursor-pointer p-1"

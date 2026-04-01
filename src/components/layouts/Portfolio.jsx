@@ -1,4 +1,3 @@
-import { useState } from 'react';
 import Container from '../Container';
 import Images from '../Images';
 
@@ -12,11 +11,6 @@ const projects = [
 ];
 
 const Portfolio = () => {
-    const [activeTab] = useState("All");
-
-    const filteredProjects = activeTab === "All"
-        ? projects
-        : projects.filter(project => project.category === activeTab);
 
     return (
         <section id="portfolio" className="py-[90px] bg-dark">
@@ -35,7 +29,7 @@ const Portfolio = () => {
                 </div>
                 {/* Portfolio Grid */}
                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
-                    {filteredProjects.map((project) => (
+                    {projects.map((project) => (
                         <div
                             key={project.id}
                             className="group relative overflow-hidden rounded-2xl bg-gray-800 aspect-4/3 cursor-pointer"

@@ -1,8 +1,10 @@
 import Container from '../Container';
-import { FaHtml5 } from "react-icons/fa";
+import { FaBootstrap, FaHtml5 } from "react-icons/fa";
 import { FaNodeJs } from "react-icons/fa";
 import { FaReact } from "react-icons/fa";
 import { RiTailwindCssFill } from "react-icons/ri";
+import { SiNextdotjs } from "react-icons/si";
+import { FaGitAlt } from "react-icons/fa";
 
 const About = () => {
   return (
@@ -10,10 +12,9 @@ const About = () => {
       <Container>
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-[60px] items-center">
           {/* Left Side: Skills Circles */}
-          <div className="anim-left">
-            <div className="bg-white rounded-[28px] p-12 shadow-[0_20px_50px_rgba(108,92,231,.08)] grid grid-cols-2">
-
-              <div className="flex flex-wrap flex-col justify-center gap-8">
+          <div className="anim-left w-fit">
+            <div className="bg-white rounded-[28px] p-18 shadow-[0_20px_50px_rgba(108,92,231,.08)] grid grid-row-2 gap-15">
+              <div className="flex flex-wrap justify-center gap-20">
                 {/* Skill 1: HTML */}
                 <div className="text-center">
                   <div className="w-24 h-24 mb-4 mx-auto rounded-full border-4 border-indigo-100 flex items-center justify-center relative">
@@ -26,6 +27,16 @@ const About = () => {
                 {/* Skill 2: CSS */}
                 <div className="text-center">
                   <div className="w-24 h-24 mb-4 mx-auto rounded-full border-4 border-indigo-100 flex items-center justify-center relative">
+                    <SiNextdotjs className="font-bold text-primary text-4xl" />
+
+                  </div>
+                  <h4 className="font-bold text-gray-700 text-sm uppercase tracking-wide">
+                    Next JS
+                  </h4>
+                </div>
+                {/* Skill 3: CSS */}
+                <div className="text-center">
+                  <div className="w-24 h-24 mb-4 mx-auto rounded-full border-4 border-indigo-100 flex items-center justify-center relative">
                     <FaNodeJs className="font-bold text-primary text-4xl" />
                   </div>
                   <h4 className="font-bold text-gray-700 text-sm uppercase tracking-wide">
@@ -33,9 +44,8 @@ const About = () => {
                   </h4>
                 </div>
               </div>
-
-              <div className="flex flex-wrap flex-col justify-center gap-8">
-                {/* Skill 3: JavaScript */}
+              <div className="flex flex-wrap justify-center gap-20">
+                {/* Skill 4: JavaScript */}
                 <div className="text-center">
                   <div className="w-24 h-24 mb-4 mx-auto rounded-full border-4 border-indigo-100 flex items-center justify-center relative">
                     <FaReact className="font-bold text-primary text-4xl" />
@@ -44,13 +54,22 @@ const About = () => {
                     React
                   </h4>
                 </div>
-                {/* Skill 4: JavaScript */}
+                {/* Skill 5: JavaScript */}
                 <div className="text-center">
                   <div className="w-24 h-24 mb-4 mx-auto rounded-full border-4 border-indigo-100 flex items-center justify-center relative">
                     <RiTailwindCssFill className="font-bold text-primary text-4xl" />
                   </div>
                   <h4 className="font-bold text-gray-700 text-sm uppercase tracking-wide">
                     TailWind
+                  </h4>
+                </div>
+                {/* Skill 6: JavaScript */}
+                <div className="text-center">
+                  <div className="w-24 h-24 mb-4 mx-auto rounded-full border-4 border-indigo-100 flex items-center justify-center relative">
+                    <FaBootstrap className="font-bold text-primary text-4xl" />
+                  </div>
+                  <h4 className="font-bold text-gray-700 text-sm uppercase tracking-wide">
+                    Bootstrap
                   </h4>
                 </div>
               </div>
