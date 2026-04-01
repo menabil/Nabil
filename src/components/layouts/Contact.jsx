@@ -1,4 +1,5 @@
-import React, { useState } from 'react';
+import React, { useRef, useState } from 'react';
+import emailjs from '@emailjs/browser';
 import Container from '../Container';
 import { IoIosMail } from "react-icons/io";
 import { FaPhone } from "react-icons/fa6";
@@ -24,6 +25,28 @@ const Contact = () => {
         console.log("Form Submitted:", formData);
         alert("Thanks for reaching out!");
     };
+
+    // Email JSSS
+
+    const form = useRef();
+
+    const sendEmail = (e) => {
+        e.preventDefault();
+
+        emailjs
+            .sendForm('service_ahg6d5p', 'template_79x3qyw', form.current, {
+                publicKey: 'rC2OuUPjCYkBUejd-',
+            })
+            .then(
+                () => {
+                    console.log('SUCCESS!');
+                },
+                (error) => {
+                    console.log('FAILED...', error.text);
+                },
+            );
+    };
+
 
     return (
         <section id="contact" className="py-[90px] bg-white">
@@ -100,13 +123,13 @@ const Contact = () => {
                     </div>
 
                     {/* Right Form */}
-                    <form onSubmit={handleSubmit}>
+                    <form ref={form} onSubmit={sendEmail}>
                         <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-4">
                             <div>
                                 <label className="block font-semibold text-[13px] mb-1.5 text-gray-700">Your Name *</label>
                                 <input
+                                    type="text" name="user_name"
                                     id="f-name"
-                                    type="text"
                                     required
                                     placeholder="Enter your name"
                                     className="w-full px-4 py-3 rounded-[14px] border-[1.5px] border-gray-200 bg-gray-50 font-pop text-sm text-gray-800 outline-none transition focus:border-primary focus:bg-white focus:shadow-[0_0_0_3px_rgba(108,92,231,.1)]"
@@ -116,6 +139,7 @@ const Contact = () => {
                             <div>
                                 <label className="block font-semibold text-[13px] mb-1.5 text-gray-700">Email Address *</label>
                                 <input
+                                    name="user_email"
                                     id="f-email"
                                     type="email"
                                     required
@@ -138,6 +162,7 @@ const Contact = () => {
                         <div className="mb-4">
                             <label className="block font-semibold text-[13px] mb-1.5 text-gray-700">Message *</label>
                             <textarea
+                                name="message"
                                 id="f-message"
                                 required
                                 placeholder="Enter your message"
@@ -146,7 +171,7 @@ const Contact = () => {
                             ></textarea>
                         </div>
                         <button
-                            type="submit"
+                            type="submit" value="Send"
                             className="w-full mt-5 mx-auto py-3.5 bg-primary text-white rounded-[14px] font-pop text-[15px] font-bold cursor-pointer transition-all flex items-center justify-center gap-2 border-3 border-primary hover:border-indigo-200 hover:bg-transparent hover:text-primary duration-300"
                         >
                             Send Message

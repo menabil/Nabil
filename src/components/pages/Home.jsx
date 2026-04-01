@@ -2,7 +2,6 @@ import { useState, useEffect } from 'react';
 // 1. Lenis hook import korun (apnar package er nam onujayi import change hote pare)
 import { useLenis } from 'lenis/react';
 import Banner from "../layouts/Banner";
-import Blog from "../layouts/Blog";
 import Contact from "../layouts/Contact";
 import Portfolio from "../layouts/Portfolio";
 import { FaArrowUp } from "react-icons/fa";
@@ -89,7 +88,6 @@ const Home = () => {
                 <Banner />
                 <About />
                 <Portfolio />
-                <Blog />
                 <Contact />
             </main>
 

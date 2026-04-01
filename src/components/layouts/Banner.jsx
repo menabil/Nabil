@@ -4,15 +4,12 @@ import { SiGithub } from "react-icons/si";
 import { FaArrowRightLong } from "react-icons/fa6";
 import Container from '../Container';
 import Images from '../Images';
-import c1 from '/src/assets/tFor.png';
-import c2 from '/src/assets/tThr.png';
-import c3 from '/src/assets/tFiv.png';
-import banner from '/src/assets/banner.jpg';
+import banner from '/src/assets/bdb.png';
 
 const Banner = () => {
     const [typedText, setTypedText] = useState('');
     // eslint-disable-next-line react-hooks/exhaustive-deps
-    const roles = ["Fontend Developer"];
+    const roles = ["Front-end Developer"];
     const [roleIndex, setRoleIndex] = useState(0);
     const [charIndex, setCharIndex] = useState(0);
     const [isDeleting, setIsDeleting] = useState(false);
@@ -46,11 +43,11 @@ const Banner = () => {
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-[60px] items-center">
                     {/* Left Content */}
                     <div className="z-10">
-                        <p className="text-gray-500 text-lg mb-1.5">Hello, I Am</p>
+                        <p className="text-gray-500 text-2xl font-bold font-pop mb-1.5">Hello, I Am</p>
                         <h1 className="font-bold text-primary leading-none mb-4 text-5xl md:text-6xl lg:text-7xl">
                             Nabil Muntasir
                         </h1>
-                        <div className="font-semibold text-gray-800 mb-5 text-xl md:text-2xl lg:text-[28px] min-h-9">
+                        <div className="font-semibold text-gray-800 mb-5 text-2xl md:text-xl lg:text-[28px] min-h-9">
                             I'm a <span className="text-primary">{typedText}</span>
                             <span className="text-primary animate-pulse">|</span>
                         </div>
@@ -86,27 +83,7 @@ const Banner = () => {
                         {/* Circle Background */}
                         <div className="absolute w-[380px] h-[380px] bg-primary/10 rounded-full top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"></div>
                         <Images imgSrc={banner} className="relative z-10  w-[320px] h-[440px] object-cover object-top rounded-[28px] shadow-2xl" />
-                        {/* Award Badge (Floating) */}
-                        <div className="absolute -top-4 -right-2.5 z-20 bg-white rounded-[18px] px-4 py-3 shadow-xl flex items-center gap-2.5 animate-[float_3s_ease-in-out_infinite]"
-                            style={{ animation: 'float 3s ease-in-out infinite' }}>
-                            <div className="w-10 h-10 bg-orange-100 rounded-xl flex items-center justify-center text-xl">🏆</div>
-                            <div>
-                                <div className="font-bold text-[13px]">Best Design Award</div>
-                                <div className="text-[11px] text-gray-500">2025 Winner</div>
-                            </div>
-                        </div>
-                        {/* Client Stack (Floating Slow) */}
-                        <div className="absolute -bottom-4 left-2.5 z-20 bg-white rounded-2xl px-3.5 py-2.5 shadow-xl flex items-center gap-2.5 animate-[float_4s_ease-in-out_infinite_1s]">
-                            <div className="flex">
-                                <Images imgSrc={c1} className="w-[30px] h-[30px] rounded-full border-2 border-white object-cover" />
-                                <Images imgSrc={c2} className="w-[30px] h-[30px] rounded-full border-2 border-white object-cover -ml-2" />
-                                <Images imgSrc={c3} className="w-[30px] h-[30px] rounded-full border-2 border-white object-cover -ml-2" />
-                            </div>
-                            <div>
-                                <div className="font-bold text-xs">Happy Clients</div>
-                                <div className="text-[11px] text-gray-500">25+ worldwide</div>
-                            </div>
-                        </div>
+
                         {/* Social Links */}
                         <div className="absolute -left-2.5 top-1/2 -translate-y-1/2 flex flex-col gap-3 z-20">
                             {/* LinkedIn */}
