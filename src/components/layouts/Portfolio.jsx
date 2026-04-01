@@ -1,18 +1,25 @@
 import Container from '../Container';
 import Images from '../Images';
-import p6 from '/src/assets/pSix.png';
 
+// 1. Sob gulo image ekhane import kore nin (Path gulo apnar folder structure onujayi thik ache kina check kore niben)
+import pOne from '../assets/pOne.png';
+import pTwo from '../assets/pTwo.png';
+import pThr from '../assets/pThr.png';
+import pFor from '../assets/pFor.png';
+import pFiv from '../assets/pFiv.png';
+import pSix from '../assets/pSix.png'; 
+
+// 2. Ebar string path er bodole upore import kora variable gulo use korun
 const projects = [
-    { id: 1, title: "Modern E-commerce", category: "E-commerce", image: { p6 } },
-    { id: 2, title: "Fitness Tracker App", category: "Web Design", image: "/src/assets/pFiv.png" },
-    { id: 3, title: "Corporate Branding", category: "Agency", image: "/src/assets/pThr.png" },
-    { id: 4, title: "Travel Blog Platform", category: "Web Design", image: "/src/assets/pFor.png" },
-    { id: 5, title: "Fintech Dashboard", category: "E-commerce", image: "/src/assets/pTwo.png" },
-    { id: 6, title: "Luxury Goods Identity", category: "Agency", image: "/src/assets/pOne.png" },
+    { id: 1, title: "Modern E-commerce", category: "E-commerce", image: pSix }, // { p6 } theke shudhu pSix kora hoyeche
+    { id: 2, title: "Fitness Tracker App", category: "Web Design", image: pFiv },
+    { id: 3, title: "Corporate Branding", category: "Agency", image: pThr },
+    { id: 4, title: "Travel Blog Platform", category: "Web Design", image: pFor },
+    { id: 5, title: "Fintech Dashboard", category: "E-commerce", image: pTwo },
+    { id: 6, title: "Luxury Goods Identity", category: "Agency", image: pOne },
 ];
 
 const Portfolio = () => {
-
     return (
         <section id="portfolio" className="py-[90px] bg-dark">
             <Container>
@@ -28,6 +35,7 @@ const Portfolio = () => {
                         Check My Portfolio
                     </h2>
                 </div>
+                
                 {/* Portfolio Grid */}
                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
                     {projects.map((project) => (
@@ -35,6 +43,7 @@ const Portfolio = () => {
                             key={project.id}
                             className="group relative overflow-hidden rounded-2xl bg-gray-800 aspect-4/3 cursor-pointer"
                         >
+                            {/* Aspect ratio aspect-4/3 ke Tailwind e aspect-[4/3] likhte hoy standard way te */}
                             <Images imgSrc={project.image} className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110 opacity-80 group-hover:opacity-100"
                             />
                             <div className="absolute inset-0 bg-linear-to-t from-black/80 via-black/20 to-transparent flex flex-col justify-end p-8 translate-y-4 group-hover:translate-y-0 transition-transform duration-300">
@@ -46,6 +55,7 @@ const Portfolio = () => {
                         </div>
                     ))}
                 </div>
+                
                 {/* Footer Button */}
                 <div className="text-center mt-10">
                     <button className="inline-flex items-center gap-2 px-7 cursor-pointer py-3 rounded-full bg-primary text-white border-3 border-primary font-semibold text-sm transition-all hover:border-indigo-200 hover:bg-transparent hover:text-indigo-200 ">
