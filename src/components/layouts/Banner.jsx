@@ -3,6 +3,11 @@ import { FaLinkedinIn } from "react-icons/fa";
 import { SiGithub } from "react-icons/si";
 import { FaArrowRightLong } from "react-icons/fa6";
 import Container from '../Container';
+import Images from '../Images';
+import c1 from '/src/assets/tFor.png';
+import c2 from '/src/assets/tThr.png';
+import c3 from '/src/assets/tFiv.png';
+import banner from '/src/assets/banner.jpg';
 
 const Banner = () => {
     const [typedText, setTypedText] = useState('');
@@ -45,16 +50,13 @@ const Banner = () => {
                         <h1 className="font-bold text-primary leading-none mb-4 text-5xl md:text-6xl lg:text-7xl">
                             Nabil Muntasir
                         </h1>
-
                         <div className="font-semibold text-gray-800 mb-5 text-xl md:text-2xl lg:text-[28px] min-h-9">
                             I'm a <span className="text-primary">{typedText}</span>
                             <span className="text-primary animate-pulse">|</span>
                         </div>
-
                         <p className="text-gray-500 leading-relaxed mb-9 max-w-[440px]">
                             I focused on React and Next.js, with expertise in crafting pixel-perfect UIs from Figma using Tailwind CSS. Built multiple live projects and boosted frontend performance.
                         </p>
-
                         <div className="flex gap-4 flex-wrap mb-12">
                             <a href="#contact" className="no-underline inline-flex items-center gap-2 px-7 py-3 rounded-full bg-primary text-white font-semibold text-sm transition-all border-3 border-primary hover:border-indigo-200 hover:bg-transparent hover:text-primary duration-300">
                                 Hire Me
@@ -63,7 +65,6 @@ const Banner = () => {
                                 See My Work <FaArrowRightLong />
                             </a>
                         </div>
-
                         {/* Counter Section */}
                         <div className="flex gap-10 pt-9 border-t border-gray-200">
                             <div>
@@ -84,11 +85,7 @@ const Banner = () => {
                     <div className="relative hidden md:flex justify-center">
                         {/* Circle Background */}
                         <div className="absolute w-[380px] h-[380px] bg-primary/10 rounded-full top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"></div>
-                        <img
-                            src="/src/assets/banner.jpg"
-                            alt="banner"
-                            className="relative z-10  w-[320px] h-[440px] object-cover object-top rounded-[28px] shadow-2xl"
-                        />
+                        <Images imgSrc={banner} className="relative z-10  w-[320px] h-[440px] object-cover object-top rounded-[28px] shadow-2xl" />
                         {/* Award Badge (Floating) */}
                         <div className="absolute -top-4 -right-2.5 z-20 bg-white rounded-[18px] px-4 py-3 shadow-xl flex items-center gap-2.5 animate-[float_3s_ease-in-out_infinite]"
                             style={{ animation: 'float 3s ease-in-out infinite' }}>
@@ -98,13 +95,12 @@ const Banner = () => {
                                 <div className="text-[11px] text-gray-500">2025 Winner</div>
                             </div>
                         </div>
-
                         {/* Client Stack (Floating Slow) */}
                         <div className="absolute -bottom-4 left-2.5 z-20 bg-white rounded-2xl px-3.5 py-2.5 shadow-xl flex items-center gap-2.5 animate-[float_4s_ease-in-out_infinite_1s]">
                             <div className="flex">
-                                <img src="/src/assets/tFor.png" alt="c1" className="w-[30px] h-[30px] rounded-full border-2 border-white object-cover" />
-                                <img src="/src/assets/tThr.png" alt="c2" className="w-[30px] h-[30px] rounded-full border-2 border-white object-cover -ml-2" />
-                                <img src="/src/assets/tFiv.png" alt="c3" className="w-[30px] h-[30px] rounded-full border-2 border-white object-cover -ml-2" />
+                                <Images imgSrc={c1} className="w-[30px] h-[30px] rounded-full border-2 border-white object-cover" />
+                                <Images imgSrc={c2} className="w-[30px] h-[30px] rounded-full border-2 border-white object-cover -ml-2" />
+                                <Images imgSrc={c3} className="w-[30px] h-[30px] rounded-full border-2 border-white object-cover -ml-2" />
                             </div>
                             <div>
                                 <div className="font-bold text-xs">Happy Clients</div>
@@ -113,24 +109,20 @@ const Banner = () => {
                         </div>
                         {/* Social Links */}
                         <div className="absolute -left-2.5 top-1/2 -translate-y-1/2 flex flex-col gap-3 z-20">
-
                             {/* LinkedIn */}
                             <a href="#" className="no-underline w-8 h-8 bg-white rounded-full shadow-md flex items-center justify-center text-xs font-bold text-primary transition-all hover:bg-primary hover:text-white hover:scale-110">
                                 <FaLinkedinIn />
                             </a>
-
                             {/* GitHub */}
                             <a href="#" className="no-underline w-8 h-8 bg-white rounded-full shadow-md flex items-center justify-center text-xs font-bold text-primary transition-all hover:bg-primary hover:text-white hover:scale-110">
                                 <SiGithub />
                             </a>
-
                             {/* Behance */}
                             <a href="#" className="no-underline w-8 h-8 bg-white rounded-full shadow-md flex items-center justify-center text-xs font-bold text-primary transition-all hover:bg-primary hover:text-white hover:scale-110">
                                 be
                             </a>
                         </div>
                     </div>
-
                 </div>
             </Container>
         </section >
