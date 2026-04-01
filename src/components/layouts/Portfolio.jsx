@@ -1,8 +1,9 @@
 import Container from '../Container';
 import Images from '../Images';
+import p6 from '/src/assets/pSix.png';
 
 const projects = [
-    { id: 1, title: "Modern E-commerce", category: "E-commerce", image: "/src/assets/pSix.png" },
+    { id: 1, title: "Modern E-commerce", category: "E-commerce", image: { p6 } },
     { id: 2, title: "Fitness Tracker App", category: "Web Design", image: "/src/assets/pFiv.png" },
     { id: 3, title: "Corporate Branding", category: "Agency", image: "/src/assets/pThr.png" },
     { id: 4, title: "Travel Blog Platform", category: "Web Design", image: "/src/assets/pFor.png" },
