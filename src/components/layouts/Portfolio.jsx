@@ -2,12 +2,12 @@ import Container from '../Container';
 import Images from '../Images';
 
 // 1. Sob gulo image ekhane import kore nin (Path gulo apnar folder structure onujayi thik ache kina check kore niben)
-import pOne from '../assets/pOne.png';
-import pTwo from '../assets/pTwo.png';
-import pThr from '../assets/pThr.png';
-import pFor from '../assets/pFor.png';
-import pFiv from '../assets/pFiv.png';
-import pSix from '../assets/pSix.png'; 
+import pOne from '/src/assets/pOne.png';
+import pTwo from '/src/assets/pTwo.png';
+import pThr from '/src/assets/pThr.png';
+import pFor from '/src/assets/pFor.png';
+import pFiv from '/src/assets/pFiv.png';
+import pSix from '/src/assets/pSix.png'; 
 
 // 2. Ebar string path er bodole upore import kora variable gulo use korun
 const projects = [
