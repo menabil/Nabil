@@ -1,7 +1,7 @@
 import Container from '../Container';
 import Images from '../Images';
 
-// 1. Sob gulo image ekhane import kore nin (Path gulo apnar folder structure onujayi thik ache kina check kore niben)
+// 1. Image imports
 import pOne from '/src/assets/pOne.png';
 import pTwo from '/src/assets/pTwo.png';
 import pThr from '/src/assets/pThr.png';
@@ -9,16 +9,6 @@ import pFor from '/src/assets/pFor.png';
 import pFiv from '/src/assets/pFiv.png';
 import pSix from '/src/assets/pSix.png';
 import { FaArrowRight, FaGithub } from 'react-icons/fa';
-
-// 2. Ebar string path er bodole upore import kora variable gulo use korun
-const projects = [
-    { id: 1, title: "Modern E-commerce", category: "E-commerce", image: pSix }, // { p6 } theke shudhu pSix kora hoyeche
-    { id: 2, title: "Fitness Tracker App", category: "Web Design", image: pFiv },
-    { id: 3, title: "Corporate Branding", category: "Agency", image: pThr },
-    { id: 4, title: "Travel Blog Platform", category: "Web Design", image: pFor },
-    { id: 5, title: "Fintech Dashboard", category: "E-commerce", image: pTwo },
-    { id: 6, title: "Luxury Goods Identity", category: "Agency", image: pOne },
-];
 
 const Portfolio = () => {
     return (
@@ -30,51 +20,93 @@ const Portfolio = () => {
                         Creative Works
                     </span>
                     <h2
-                        className="font-pop font-extrabold text-white leading-tight"
-                        style={{ fontSize: "clamp(30px, 4vw, 46px)" }}
+                        className="font-pop font-extrabold text-white leading-tight text-[clamp(30px,4vw,46px)]"
                     >
                         Check My Portfolio
                     </h2>
                 </div>
 
-                {/* Portfolio Grid */}
+                {/* Portfolio Grid (Manual Rows) */}
                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
-                    {projects.map((project) => (
-                        <div
-                            key={project.id}
-                            className="group relative overflow-hidden rounded-2xl bg-gray-800 aspect-4/3 cursor-pointer"
-                        >
-                            {/* Aspect ratio aspect-4/3 ke Tailwind e aspect-[4/3] likhte hoy standard way te */}
-                            <Images imgSrc={project.image} className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110 opacity-80 group-hover:opacity-100"
-                            />
-                            <div className="absolute inset-0 bg-[#090A0C]/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center gap-4">
-                                <a
-                                    href="https://react-orebi-e-commerce.vercel.app/"
-                                    target="_blank"
-                                    rel="noreferrer"
-                                    className="w-12 h-12 bg-[#ffffff] rounded-full flex items-center justify-center text-[#090A0C] hover:bg-[#090A0c] hover:text-white transition-all duration-300 scale-0 group-hover:scale-100 delay-100"
-                                    title="View Live"
-                                >
-                                    <FaArrowRight className="-rotate-45 text-lg" />
-                                </a>
-                                <a
-                                    href="https://react-orebi-e-commerce.vercel.app/"
-                                    target="_blank"
-                                    rel="noreferrer"
-                                    className="w-12 h-12 bg-[#ffffff] rounded-full flex items-center justify-center text-[#090A0C] hover:bg-[#090A0c] hover:text-white transition-all duration-300 scale-0 group-hover:scale-100 delay-200"
-                                    title="Github Code"
-                                >
-                                    <FaGithub className="text-xl" />
-                                </a>
-                            </div>
-                            {/* <div className="absolute inset-0 bg-linear-to-t from-black via-black/20 to-transparent flex flex-col justify-end p-8 translate-y-4 group-hover:translate-y-0 transition-transform duration-300">
-                                <span className="text-white/60 text-xs uppercase tracking-widest mb-2">
-                                    {project.category}
-                                </span>
-                                <h3 className="text-white text-xl font-bold">{project.title}</h3>
-                            </div> */}
+
+                    {/* Project 1 */}
+                    <div className="group relative overflow-hidden rounded-2xl bg-gray-800 aspect-4/3 cursor-pointer">
+                        <Images imgSrc={pSix} className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110 opacity-80 group-hover:opacity-100" />
+                        <div className="absolute inset-0 bg-[#090A0C]/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center gap-4">
+                            <a href="https://menabil.github.io/Exclusive" target="_blank" className="pIcon delay-100">
+                                <FaArrowRight className="-rotate-45 text-lg" />
+                            </a>
+                            <a href="https://github.com/menabil/Exclusive" target="_blank" className="pIcon delay-200">
+                                <FaGithub className="text-xl" />
+                            </a>
                         </div>
-                    ))}
+                    </div>
+
+                    {/* Project 2 */}
+                    <div className="group relative overflow-hidden rounded-2xl bg-gray-800 aspect-4/3 cursor-pointer">
+                        <Images imgSrc={pFiv} className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110 opacity-80 group-hover:opacity-100" />
+                        <div className="absolute inset-0 bg-[#090A0C]/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center gap-4">
+                            <a href="https://menabil.github.io/Hunt" target="_blank" className="pIcon delay-100">
+                                <FaArrowRight className="-rotate-45 text-lg" />
+                            </a>
+                            <a href="https://github.com/menabil/Hunt" target="_blank" className="pIcon delay-200">
+                                <FaGithub className="text-xl" />
+                            </a>
+                        </div>
+                    </div>
+
+                    {/* Project 3 */}
+                    <div className="group relative overflow-hidden rounded-2xl bg-gray-800 aspect-4/3 cursor-pointer">
+                        <Images imgSrc={pThr} className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110 opacity-80 group-hover:opacity-100" />
+                        <div className="absolute inset-0 bg-[#090A0C]/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center gap-4">
+                            <a href="https://menabil.github.io/Creative" target="_blank" className="pIcon delay-100">
+                                <FaArrowRight className="-rotate-45 text-lg" />
+                            </a>
+                            <a href="https://github.com/menabil/Creative" target="_blank" className="pIcon delay-200">
+                                <FaGithub className="text-xl" />
+                            </a>
+                        </div>
+                    </div>
+
+                    {/* Project 4 */}
+                    <div className="group relative overflow-hidden rounded-2xl bg-gray-800 aspect-4/3 cursor-pointer">
+                        <Images imgSrc={pFor} className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110 opacity-80 group-hover:opacity-100" />
+                        <div className="absolute inset-0 bg-[#090A0C]/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center gap-4">
+                            <a href="https://menabil.github.io/Uomo" target="_blank" className="pIcon delay-100">
+                                <FaArrowRight className="-rotate-45 text-lg" />
+                            </a>
+                            <a href="https://github.com/menabil/Uomo" target="_blank" className="pIcon delay-200">
+                                <FaGithub className="text-xl" />
+                            </a>
+                        </div>
+                    </div>
+
+                    {/* Project 5 */}
+                    <div className="group relative overflow-hidden rounded-2xl bg-gray-800 aspect-4/3 cursor-pointer">
+                        <Images imgSrc={pTwo} className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110 opacity-80 group-hover:opacity-100" />
+                        <div className="absolute inset-0 bg-[#090A0C]/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center gap-4">
+                            <a href="https://class-52.vercel.app" target="_blank" className="pIcon delay-100">
+                                <FaArrowRight className="-rotate-45 text-lg" />
+                            </a>
+                            <a href="https://github.com/menabil/Orebi" target="_blank" className="pIcon delay-200">
+                                <FaGithub className="text-xl" />
+                            </a>
+                        </div>
+                    </div>
+
+                    {/* Project 6 */}
+                    <div className="group relative overflow-hidden rounded-2xl bg-gray-800 aspect-4/3 cursor-pointer">
+                        <Images imgSrc={pOne} className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110 opacity-80 group-hover:opacity-100" />
+                        <div className="absolute inset-0 bg-[#090A0C]/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center gap-4">
+                            <a href="https://menabil.github.io/Hancok" target="_blank" className="pIcon delay-100">
+                                <FaArrowRight className="-rotate-45 text-lg" />
+                            </a>
+                            <a href="https://github.com/menabil/Hancok" target="_blank" className="pIcon delay-200">
+                                <FaGithub className="text-xl" />
+                            </a>
+                        </div>
+                    </div>
+
                 </div>
 
                 {/* Footer Button */}
