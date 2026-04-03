@@ -111,9 +111,9 @@ const Portfolio = () => {
 
                 {/* Footer Button */}
                 <div className="text-center mt-10">
-                    <button className="inline-flex items-center gap-2 px-7 cursor-pointer py-3 rounded-full bg-primary text-white border-3 border-primary font-semibold text-sm transition-all hover:border-indigo-200 hover:bg-transparent hover:text-indigo-200 ">
+                    <a href='https://github.com/menabil' target='_blank' className="inline-flex items-center gap-2 px-7 cursor-pointer py-3 rounded-full bg-primary text-white border-3 border-primary font-semibold text-sm transition-all hover:border-indigo-200 hover:bg-transparent hover:text-indigo-200 ">
                         View All Projects
-                    </button>
+                    </a>
                 </div>
             </Container>
         </section>
