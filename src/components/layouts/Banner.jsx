@@ -43,7 +43,7 @@ const Banner = () => {
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-[60px] items-center">
                     {/* Left Content */}
                     <div className="z-10">
-                        <p className="text-gray-500 text-2xl font-bold font-pop mb-1.5">Hello, I Am</p>
+                        <p className="text-gray-500 text-2xl font-medium mb-1.5">Hello, I Am</p>
                         <h1 className="font-bold text-primary leading-none mb-4 text-5xl md:text-6xl lg:text-7xl">
                             Nabil Muntasir
                         </h1>

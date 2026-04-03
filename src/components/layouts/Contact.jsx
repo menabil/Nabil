@@ -6,7 +6,7 @@ import { FaPhone } from "react-icons/fa6";
 import { HiLocationMarker } from "react-icons/hi";
 
 const Contact = () => {
-    const [formData, setFormData] = useState({
+    const [setFormData] = useState({
         name: '',
         email: '',
         subject: '',
@@ -18,12 +18,6 @@ const Contact = () => {
         // Mapping the input IDs to our state keys
         const key = id.replace('f-', '');
         setFormData(prev => ({ ...prev, [key]: value }));
-    };
-
-    const handleSubmit = (e) => {
-        e.preventDefault();
-        console.log("Form Submitted:", formData);
-        alert("Thanks for reaching out!");
     };
 
     // Email JSSS
@@ -39,14 +33,13 @@ const Contact = () => {
             })
             .then(
                 () => {
-                    console.log('SUCCESS!');
+                    alert('SUCCESS!');
                 },
                 (error) => {
-                    console.log('FAILED...', error.text);
+                    alert('FAILED..', error.text);
                 },
             );
     };
-
 
     return (
         <section id="contact" className="py-[90px] bg-white">

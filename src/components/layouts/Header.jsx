@@ -43,11 +43,11 @@ const Header = () => {
                         {/* Desktop Menu */}
                         <div className="flex items-center gap-x-10">
                             <ul className="hidden md:flex items-end gap-9 list-none mb-0">
-                                {['Home', 'About', 'Portfolio', 'Blog'].map((item) => (
+                                {['Home', 'About', 'Portfolio', 'Contact'].map((item) => (
                                     <li key={item}>
                                         <SmoothLink href={`#${item.toLowerCase()}`}><a
 
-                                            className="nav-link relative no-underline text-gray-800 text-sm font-medium transition-colors hover:text-primary"
+                                            className="nav-link relative no-underline text-gray-800 text-sm font-medium transition-colors hover:text-primary beforeAfter"
                                         >
                                             {item}
                                         </a></SmoothLink>
@@ -77,7 +77,7 @@ const Header = () => {
                         className={`${isOpen ? 'flex' : 'hidden'
                             } absolute left-0 right-0 top-full bg-white shadow-[0_10px_30px_rgba(0,0,0,.1)] px-6 py-5 flex-col gap-4 animate-fadeIn`}
                     >
-                        {['Home', 'About', 'Portfolio', 'Blog'].map((item) => (
+                        {['Home', 'About', 'Portfolio'].map((item) => (
                             <a
                                 key={item}
                                 href={`#${item.toLowerCase()}`}
