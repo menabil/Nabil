@@ -1,14 +1,25 @@
-import Container from '../Container';
+import Container from "../Container";
 import { FaBootstrap, FaHtml5 } from "react-icons/fa";
 import { FaNodeJs } from "react-icons/fa";
 import { FaReact } from "react-icons/fa";
 import { RiTailwindCssFill } from "react-icons/ri";
 import { SiNextdotjs } from "react-icons/si";
-import { FaGitAlt } from "react-icons/fa";
+import Images from "../Images";
+import bThr from "/src/assets/bannerThr.png";
+import bOne from "/src/assets/bannerOne.png";
 
 const About = () => {
   return (
-    <section id="about" className="py-[90px] bg-gray-50">
+    <section id="about" className="py-[90px] bg-gray-50 relative">
+      <Images
+        imgSrc={bThr}
+        className={"absolute top-40 left-10 hidden lg:block"}
+      />
+      <Images
+        imgSrc={bOne}
+        className={"absolute bottom-30 right-30 hidden lg:block"}
+      />
+
       <Container>
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-[60px] items-center">
           {/* Left Side: Skills Circles */}
@@ -28,7 +39,6 @@ const About = () => {
                 <div className="text-center">
                   <div className="w-24 h-24 mb-4 mx-auto rounded-full border-4 border-indigo-100 flex items-center justify-center relative">
                     <SiNextdotjs className="font-bold text-primary text-4xl" />
-
                   </div>
                   <h4 className="font-bold text-gray-700 text-sm uppercase tracking-wide">
                     Next JS
@@ -73,7 +83,6 @@ const About = () => {
                   </h4>
                 </div>
               </div>
-
             </div>
           </div>
           {/* Right Side: Content */}
@@ -81,16 +90,20 @@ const About = () => {
             <span className="block text-[12px] font-bold tracking-[3px] uppercase text-primary mb-2.5">
               My Skills
             </span>
-            <h2
-              className="font-pop font-bold text-gray-800 leading-tight mb-4 text-3xl md:text-4xl lg:text-5xl"
-            >
-              Beautiful & Unique<br />Digital Experiences
+            <h2 className="font-pop font-bold text-gray-800 leading-tight mb-4 text-3xl md:text-4xl lg:text-5xl">
+              Beautiful & Unique
+              <br />
+              Digital Experiences
             </h2>
             <p className="text-gray-500 leading-relaxed mb-3.5">
-              I blend creative design thinking with technical precision to build digital products that are both visually compelling and highly performant.
+              I blend creative design thinking with technical precision to build
+              digital products that are both visually compelling and highly
+              performant.
             </p>
             <p className="text-gray-500 leading-relaxed mb-7">
-              With 1+ years of experience in frontend development, I specialize in React and Next.js, delivering scalable, pixel-perfect user interfaces with a strong focus on performance and usability.
+              With 1+ years of experience in frontend development, I specialize
+              in React and Next.js, delivering scalable, pixel-perfect user
+              interfaces with a strong focus on performance and usability.
             </p>
             {/* Checklist */}
             <ul className="list-none flex flex-col gap-2.5 mb-8">
@@ -120,7 +133,8 @@ const About = () => {
             </ul>
 
             <a
-              href="#contact"
+              href="/src/assets/Nabil.pdf"
+              download="Nabil.pdf"
               className="inline-flex items-center gap-2 px-7 py-3 rounded-full bg-primary text-white font-semibold text-sm transition-all border-3 border-primary hover:border-indigo-200 duration-300 hover:text-primary hover:bg-transparent"
             >
               Download CV
