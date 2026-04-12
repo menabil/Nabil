@@ -29,19 +29,19 @@ const Portfolio = () => {
           {/* Project 1 */}
           <div className="group relative overflow-hidden rounded-2xl bg-gray-800 aspect-4/3 cursor-pointer">
             <Images
-              imgSrc={pSix}
+              imgSrc={pOne}
               className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110 opacity-80 group-hover:opacity-100"
             />
             <div className="absolute inset-0 bg-[#090A0C]/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center gap-4">
               <a
-                href="https://menabil.github.io/Exclusive"
+                href="https://creative-web-six.vercel.app"
                 target="_blank"
                 className="pIcon delay-100"
               >
                 <FaArrowRight className="-rotate-45 text-lg" />
               </a>
               <a
-                href="https://github.com/menabil/Exclusive"
+                href="https://github.com/menabil/creativeWeb"
                 target="_blank"
                 className="pIcon delay-200"
               >
@@ -53,19 +53,19 @@ const Portfolio = () => {
           {/* Project 2 */}
           <div className="group relative overflow-hidden rounded-2xl bg-gray-800 aspect-4/3 cursor-pointer">
             <Images
-              imgSrc={pFiv}
+              imgSrc={pTwo}
               className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110 opacity-80 group-hover:opacity-100"
             />
             <div className="absolute inset-0 bg-[#090A0C]/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center gap-4">
               <a
-                href="https://menabil.github.io/Hunt"
+                href="https://edu-act-figma.vercel.app"
                 target="_blank"
                 className="pIcon delay-100"
               >
                 <FaArrowRight className="-rotate-45 text-lg" />
               </a>
               <a
-                href="https://github.com/menabil/Hunt"
+                href="https://github.com/menabil/eduActFigma"
                 target="_blank"
                 className="pIcon delay-200"
               >
@@ -82,14 +82,14 @@ const Portfolio = () => {
             />
             <div className="absolute inset-0 bg-[#090A0C]/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center gap-4">
               <a
-                href="https://menabil.github.io/Creative"
+                href="https://roiser-team.vercel.app"
                 target="_blank"
                 className="pIcon delay-100"
               >
                 <FaArrowRight className="-rotate-45 text-lg" />
               </a>
               <a
-                href="https://github.com/menabil/Creative"
+                href="https://github.com/menabil/roiserTeam"
                 target="_blank"
                 className="pIcon delay-200"
               >
@@ -106,14 +106,14 @@ const Portfolio = () => {
             />
             <div className="absolute inset-0 bg-[#090A0C]/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center gap-4">
               <a
-                href="https://menabil.github.io/Uomo"
+                href="https://project-nirvoya-chi.vercel.app"
                 target="_blank"
                 className="pIcon delay-100"
               >
                 <FaArrowRight className="-rotate-45 text-lg" />
               </a>
               <a
-                href="https://github.com/menabil/Uomo"
+                href="https://github.com/menabil/projectNirvoya"
                 target="_blank"
                 className="pIcon delay-200"
               >
@@ -125,19 +125,19 @@ const Portfolio = () => {
           {/* Project 5 */}
           <div className="group relative overflow-hidden rounded-2xl bg-gray-800 aspect-4/3 cursor-pointer">
             <Images
-              imgSrc={pTwo}
+              imgSrc={pFiv}
               className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110 opacity-80 group-hover:opacity-100"
             />
             <div className="absolute inset-0 bg-[#090A0C]/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center gap-4">
               <a
-                href="https://class-52.vercel.app"
+                href="https://uomo-e-commerce.vercel.app"
                 target="_blank"
                 className="pIcon delay-100"
               >
                 <FaArrowRight className="-rotate-45 text-lg" />
               </a>
               <a
-                href="https://github.com/menabil/Orebi"
+                href="https://github.com/menabil/uomo-EVT"
                 target="_blank"
                 className="pIcon delay-200"
               >
@@ -149,7 +149,7 @@ const Portfolio = () => {
           {/* Project 6 */}
           <div className="group relative overflow-hidden rounded-2xl bg-gray-800 aspect-4/3 cursor-pointer">
             <Images
-              imgSrc={pOne}
+              imgSrc={pSix}
               className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110 opacity-80 group-hover:opacity-100"
             />
             <div className="absolute inset-0 bg-[#090A0C]/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center gap-4">
