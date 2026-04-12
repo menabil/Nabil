@@ -4,7 +4,7 @@ import { SiGithub } from "react-icons/si";
 import { FaArrowRightLong } from "react-icons/fa6";
 import Container from "../Container";
 import Images from "../Images";
-import banner from "/src/assets/banner.jpg";
+import banner from "/src/assets/bann.png";
 import bOne from "/src/assets/bannerOne.png";
 import bTwo from "/src/assets/bannerTwo.png";
 import bThr from "/src/assets/bannerThr.png";
@@ -86,12 +86,6 @@ const Banner = () => {
                   Projects Done
                 </div>
               </div>
-              {/* <div>
-                <div className="font-black text-[32px] text-primary">25+</div>
-                <div className="text-gray-500 text-xs mt-0.5">
-                  Happy Clients
-                </div>
-              </div> */}
               <div>
                 <div className="font-black text-[32px] text-primary">1+</div>
                 <div className="text-gray-500 text-xs mt-0.5">Years Exp.</div>
@@ -100,15 +94,15 @@ const Banner = () => {
           </div>
           {/* Right Image Content */}
           <div className="relative hidden md:flex justify-center">
-            <Images imgSrc={bOne} className={"absolute top-0 right-10"} />
-            <Images imgSrc={bTwo} className={"absolute top-20 left-10"} />
-            <Images imgSrc={bThr} className={"absolute bottom-10 right-0"} />
+            <Images imgSrc={bOne} className={"absolute top-0 right-0"} />
+            <Images imgSrc={bTwo} className={"absolute top-15 left-10"} />
+            <Images imgSrc={bThr} className={"absolute bottom-10 right-10"} />
             {/* Circle Background */}
-            <div className="absolute w-[380px] h-[380px] bg-primary/20 rounded-full top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"></div>
+            <div className="absolute w-[400px] h-[400px] bg-primary/30 rounded-full top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"></div>
             <div className="absolute w-[500px] h-[500px] bg-primary/10 rounded-full top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"></div>
             <Images
               imgSrc={banner}
-              className="relative z-10  w-[320px] h-[440px] object-cover object-top rounded-[28px] shadow-2xl"
+              className="relative z-10 w-[380px] h-[380px] rounded-full object-cover object-top shadow-2xl"
             />
 
             {/* Social Links */}

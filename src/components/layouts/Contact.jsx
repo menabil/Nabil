@@ -24,7 +24,6 @@ const Contact = () => {
   };
 
   // Email JSSS
-
   const form = useRef();
 
   const sendEmail = (e) => {
