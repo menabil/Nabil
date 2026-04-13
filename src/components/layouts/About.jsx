@@ -24,65 +24,62 @@ const About = () => {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-[60px] items-center">
           {/* Left Side: Skills Circles */}
           <div className="anim-left w-fit">
-            <div className="bg-white rounded-[28px] p-18 shadow-[0_20px_50px_rgba(108,92,231,.08)] grid grid-row-2 gap-15">
-              <div className="flex flex-wrap justify-center gap-20">
-                {/* Skill 1: HTML */}
-                <div className="text-center">
-                  <div className="w-24 h-24 mb-4 mx-auto rounded-full border-4 border-indigo-100 flex items-center justify-center relative">
-                    <FaHtml5 className="font-bold text-primary text-4xl" />
-                  </div>
-                  <h4 className="font-bold text-gray-700 text-sm uppercase tracking-wide">
-                    HTML
-                  </h4>
+            <div className="bg-white rounded-[28px] lg:p-18 p-7 shadow-[0_20px_50px_rgba(108,92,231,.08)] grid lg:grid-row-2 lg:grid-cols-3 grid-cols-2 lg:gap-15 gap-7">
+              {/* Skill 1: HTML */}
+              <div className="text-center">
+                <div className="w-24 h-24 mb-4 mx-auto rounded-full border-4 border-indigo-100 flex items-center justify-center relative">
+                  <FaHtml5 className="font-bold text-primary text-4xl" />
                 </div>
-                {/* Skill 2: CSS */}
-                <div className="text-center">
-                  <div className="w-24 h-24 mb-4 mx-auto rounded-full border-4 border-indigo-100 flex items-center justify-center relative">
-                    <SiNextdotjs className="font-bold text-primary text-4xl" />
-                  </div>
-                  <h4 className="font-bold text-gray-700 text-sm uppercase tracking-wide">
-                    Next JS
-                  </h4>
-                </div>
-                {/* Skill 3: CSS */}
-                <div className="text-center">
-                  <div className="w-24 h-24 mb-4 mx-auto rounded-full border-4 border-indigo-100 flex items-center justify-center relative">
-                    <FaNodeJs className="font-bold text-primary text-4xl" />
-                  </div>
-                  <h4 className="font-bold text-gray-700 text-sm uppercase tracking-wide">
-                    JavaScript
-                  </h4>
-                </div>
+                <h4 className="font-bold text-gray-700 text-sm uppercase tracking-wide">
+                  HTML
+                </h4>
               </div>
-              <div className="flex flex-wrap justify-center gap-20">
-                {/* Skill 4: JavaScript */}
-                <div className="text-center">
-                  <div className="w-24 h-24 mb-4 mx-auto rounded-full border-4 border-indigo-100 flex items-center justify-center relative">
-                    <FaReact className="font-bold text-primary text-4xl" />
-                  </div>
-                  <h4 className="font-bold text-gray-700 text-sm uppercase tracking-wide">
-                    React
-                  </h4>
+              {/* Skill 2: JavaScript */}
+              <div className="text-center">
+                <div className="w-24 h-24 mb-4 mx-auto rounded-full border-4 border-indigo-100 flex items-center justify-center relative">
+                  <FaBootstrap className="font-bold text-primary text-4xl" />
                 </div>
-                {/* Skill 5: JavaScript */}
-                <div className="text-center">
-                  <div className="w-24 h-24 mb-4 mx-auto rounded-full border-4 border-indigo-100 flex items-center justify-center relative">
-                    <RiTailwindCssFill className="font-bold text-primary text-4xl" />
-                  </div>
-                  <h4 className="font-bold text-gray-700 text-sm uppercase tracking-wide">
-                    TailWind
-                  </h4>
-                </div>
-                {/* Skill 6: JavaScript */}
-                <div className="text-center">
-                  <div className="w-24 h-24 mb-4 mx-auto rounded-full border-4 border-indigo-100 flex items-center justify-center relative">
-                    <FaBootstrap className="font-bold text-primary text-4xl" />
-                  </div>
-                  <h4 className="font-bold text-gray-700 text-sm uppercase tracking-wide">
-                    Bootstrap
-                  </h4>
-                </div>
+                <h4 className="font-bold text-gray-700 text-sm uppercase tracking-wide">
+                  Bootstrap
+                </h4>
               </div>
+              {/* Skill 3: JavaScript */}
+              <div className="text-center">
+                <div className="w-24 h-24 mb-4 mx-auto rounded-full border-4 border-indigo-100 flex items-center justify-center relative">
+                  <RiTailwindCssFill className="font-bold text-primary text-4xl" />
+                </div>
+                <h4 className="font-bold text-gray-700 text-sm uppercase tracking-wide">
+                  TailWind
+                </h4>
+              </div>
+              {/* Skill 4: CSS */}
+              <div className="text-center">
+                <div className="w-24 h-24 mb-4 mx-auto rounded-full border-4 border-indigo-100 flex items-center justify-center relative">
+                  <FaNodeJs className="font-bold text-primary text-4xl" />
+                </div>
+                <h4 className="font-bold text-gray-700 text-sm uppercase tracking-wide">
+                  JavaScript
+                </h4>
+              </div>
+              {/* Skill 5: JavaScript */}
+              <div className="text-center">
+                <div className="w-24 h-24 mb-4 mx-auto rounded-full border-4 border-indigo-100 flex items-center justify-center relative">
+                  <FaReact className="font-bold text-primary text-4xl" />
+                </div>
+                <h4 className="font-bold text-gray-700 text-sm uppercase tracking-wide">
+                  React
+                </h4>
+              </div>
+              {/* Skill 6: CSS */}
+              <div className="text-center">
+                <div className="w-24 h-24 mb-4 mx-auto rounded-full border-4 border-indigo-100 flex items-center justify-center relative">
+                  <SiNextdotjs className="font-bold text-primary text-4xl" />
+                </div>
+                <h4 className="font-bold text-gray-700 text-sm uppercase tracking-wide">
+                  Next JS
+                </h4>
+              </div>
+              {/* </div> */}
             </div>
           </div>
           {/* Right Side: Content */}
